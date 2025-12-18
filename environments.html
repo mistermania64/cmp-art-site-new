@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Visual Development</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body class="bg-beige">
+    
+<div id = "canvas"> <!-- Overall section -->
+    <button id = "toggleMenuButton" onclick="showHidden('mobileNav')" style="display: none;">Toggle Menu</button>
+    <div id = "flex-wrapper">
+        <div id="mobileNav"> <!--Sidebar menu-->
+            <h1 style = "padding-left: 6%; padding-top: 3%;">
+                <a href = "index.html" id = "nameLink">Cicely Parris</a>
+            </h1>
+
+            <br>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html">Animations</a>
+                <!-- <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a> -->
+                <a href="characters.html">Characters</a>
+                <a href="environments.html" style="color: gray;">Environments</a>
+                
+                <!-- <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                </div> -->
+
+                <a href="thumb.html">Thumbelina</a>
+                <a href="fine-art.html">Fine Art</a>
+                <a href="meow.html">Meow</a>
+                <!-- <a href="fineartcity.html">new art city</a> -->
+                
+                <!-- <a href="illustrations.html">Illustrations</a> -->
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "index.html">About</a>
+                <!-- <a href = "files/CV.pdf" target="_blank">CV</a> -->
+            </div>
+        </div>
+
+        <!-- <div class = "grid-container centered" id="environments-grid"> <!- - Content next to sidebar - ->
+            <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: environments-label" class="centered">Environments</label>
+            <!- - <label style="grid-area: beach-label;">Beachhouse</label>
+            <label style="grid-area: leaves-label;">Leaves</label> - ->
+
+            <a target ="_blank" href="img/Visual Development/Environments/fullres/fish-under-beachhouse.jpg" style="grid-area: beachhouse;">
+                <img src="img/Visual Development/Environments/fish-under-beachhouse.jpg" style="height: 566.5px;">
+            </a>
+            
+            <a target="_blank" href="img/Visual Development/Environments/fullres/leaves.jpg" style="grid-area: leaves;">
+                <img src="img/Visual Development/Environments/leaves.jpg" style="height: 566.5px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Environments/fullres/roadsign.JPG" style="grid-area: roadsign">
+                <img src="img/Visual Development/Environments/roadsign.JPG" style="height: 566.5px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Environments/fullres/seagulls.JPG" style="grid-area: seagulls;">
+                <img src="img/Visual Development/Environments/seagulls.JPG" style="height: 566.5px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Environments/fullres/phone_line.jpg" style="grid-area: phone_line;">
+                <img src="img/Visual Development/Environments/phone_line.jpg" style="height: 566.5px;"> <!- -width: 535px; height: 755.333px;- ->
+            </a>
+
+        </div> -->
+
+        <div class="flex-col">
+            <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: environments-label" class="centered">Environments</label>
+            <div class = "flex-row centered" id="environments-flex-row" style="padding: 1%; gap: 30px; justify-content: center; max-width: 90%"> <!-- Content next to sidebar -->
+                
+                <!-- <label style="grid-area: beach-label;">Beachhouse</label>
+                <label style="grid-area: leaves-label;">Leaves</label> -->
+                
+                <a target ="_blank" href="img/Visual Development/Environments/fullres/fish-under-beachhouse.jpg" rel="noopener noreferrer" style="grid-area: beachhouse;">
+                    <img src="img/Visual Development/Environments/fish-under-beachhouse.jpg" alt="Stylish artwork of fish swimming underneath a small beachhouse." 
+                    title="Perfect vacay." style="height: 566.5px;">
+                </a>
+                
+                <a target="_blank" href="img/Visual Development/Environments/fullres/catNest.jpg" rel="noopener noreferrer" style="grid-area: cat; align-self: center;">
+                    <img src="img/Visual Development/Environments/catNest.jpg" alt="Artwork of a cute cat sitting inside a nest made from twigs and hay." 
+                    title="Meow!" style="height: 566.5px;">
+                </a>
+
+                <a target = "_blank" href="img/Visual Development/Environments/fullres/korean-restaurant.jpg" rel="noopener noreferrer" style="grid-area: restaurant;">
+                    <img src="img/Visual Development/Environments/korean-restaurant.jpg" alt="Artwork of a woman cooking food in a Korean restaurant." 
+                    title="You are getting hungry..." style="height: 566.5px;">
+                </a>
+
+                <a target="_blank" href="img/Visual Development/Environments/fullres/lake_house.jpg" rel="noopener noreferrer" style="grid-area: roadsign">
+                    <img src="img/Visual Development/Environments/lake_house.jpg" alt="Beautiful artwork of condo against the ocean."
+                    title="Money can't buy happiness, but this condo is pretty close." style="height: 566.5px;">
+                </a>
+
+                <a target="_blank" href="img/Visual Development/Environments/fullres/gas_station.jpg" rel="noopener noreferrer" style="grid-area: gas; place-self: center;">
+                    <img src="img/Visual Development/Environments/gas_station.jpg" style="width: 650px;" 
+                    alt = "A neon lit gas station at night." title="A neon lit gas station at night."> <!--height: 566.5px"-->
+                </a>
+
+                <a target="_blank" href="img/Visual Development/Environments/fullres/seagulls.JPG" rel="noopener noreferrer" style="grid-area: seagulls; place-self: center;">
+                    <img src="img/Visual Development/Environments/seagulls.JPG" style="height: 566.5px;"
+                    title="I ran, I ran so far away...." alt="A flock of seagulls.">
+                </a>
+
+                <a target="_blank" href="img/Visual Development/Environments/fullres/roadsign.JPG" rel="noopener noreferrer" style="grid-area: roadsign">
+                    <img src="img/Visual Development/Environments/roadsign.JPG" style="height: 566.5px;"
+                    alt="Decisions, decisions..." title="Art of a crossroads at the beach.">
+                </a>
+
+                <a target="_blank" href="img/Visual Development/Environments/fullres/phone_line.jpg" rel="noopener noreferrer" style="grid-area: phone_line; place-self: center;">
+                    <img src="img/Visual Development/Environments/phone_line.jpg" style="height: 566.5px;"
+                    title="Artwork of lush greenery in a field with a telephone pole." alt="Artwork of lush greenery in a field with a telephone pole."> <!--width: 535px; height: 755.333px;-->
+                </a>
+
+                 <a target="_blank" href="img/Visual Development/Environments/fullres/feather_ring.jpg" rel="noopener noreferrer" style="grid-area: feather_ring;">
+                    <img src="img/Visual Development/Environments/feather_ring.jpg" style="height: 566.5px;"
+                    alt="Artwork of a ring with feathers on either side." title="Artwork of a ring with feathers on either side."> <!--width: 535px; height: 755.333px;-->
+                </a>
+
+                <a target="_blank" href="img/Visual Development/Environments/fullres/leaves.jpg" rel="noopener noreferrer" style="grid-area: leaves; place-self: center;">
+                    <img src="img/Visual Development/Environments/leaves.jpg" style="height: 566.5px;"
+                    alt="Concept artwork of different textured leaves." title="Concept artwork of different textured leaves.">
+                </a>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+</div>
+<script src="js/javascriptFunctions.js"></script>
+<script src="js/mousetrail.js"></script>
+</body>
+</html>

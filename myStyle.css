@@ -1,0 +1,822 @@
+/* html, body { max-width: 100%; overflow-x: hidden; } */
+
+/* Borders Toggle */
+/* html, body, div, #flex-wrapper
+{
+    / * border-style: solid; * /
+} */
+
+/* 
+a:hover{
+    cursor: url("img/Cursors/awesomeFace.png") auto !important;
+} */
+
+/* Fonts */
+@font-face {
+    font-family: New-Class;
+    src: url('fonts/NewClass-w10oz.ttf');
+}
+
+
+/* Cursor */
+body {
+    cursor: url("img/Cursors/pinkCursorTopRight.png"), pointer;
+    line-height: normal;
+    margin: 8px;
+}
+
+html
+{
+    line-height: normal;
+    display: block;
+}
+
+h1
+{
+    font-size: 2em;
+}
+
+a
+{
+    box-sizing: content-box !important;
+}
+
+.sacramento-regular {
+font-family: "Sacramento", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.sacramento-heavy {
+font-family: "Sacramento", serif;
+font-weight: 550;
+font-style: normal;
+}
+
+.nova-mono-regular {
+font-family: "Nova Mono", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+/* Text Alignment */
+.centered
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Flexbox */
+#flex-wrapper
+{
+    /* padding-left: 10%; */
+    display: flex;
+    /* gap: 25px; */
+    /* border-style: dotted; */
+    /* border-style: purple; */
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-col
+{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+/* Grid */
+.grid-container
+{
+    display: grid;
+    /* grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row; */
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    
+}
+
+.grid-container > video
+{
+    border: 3px solid black;
+}
+
+.flex-row > a>img
+{
+    border: 2px solid black;
+}
+
+#cats-row > a>img
+{
+    border: solid 2px black;
+}
+
+.grid-container > video:hover
+{
+   
+}
+
+.grid-container, .flex-col, .flex-row > label
+{
+    font-family: New-Class;
+}
+
+#environments-grid > a>img, #illustrations-grid > div>img, #illustrations-grid>img
+{
+    border: 3px solid black;
+}
+
+
+
+/* Grid Areas */
+#animations-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "cats smoker"
+        "cairo smoker"
+        "rotoscope walkin"
+        "final .";
+}
+
+#animations-grid2-oldGood1
+{
+    display: grid;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; */
+    grid-template-areas: 
+        ". animations-label ."
+        ". . ."
+        "meow-label . ."
+        "meow . ."
+        "cats-label  smoker-label roto-label"
+        "cats           smoker       rotoscope"
+        "cairo-label    smoker      final-label"
+        "cairo          smoker        final"
+        "cairo            .            final"
+        "cairo        walkin-label     final"
+        "cairo          walkin            final"
+        "headturn-label    walkin            haiku-label"
+        "headturn           walkin                   haiku"
+        "headturn           .                        haiku";
+
+        /* margin-left: auto;
+        margin-right: auto; */
+}
+
+#animations-grid2
+{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 2fr;
+
+    grid-template-areas:
+    "animations-label   animations-label"
+    "cats-label         roto-label"
+    "cats               rotoscope"
+    "cairo-label        final-label"
+    "cairo              final"
+    "headturn-label     haiku-label"
+    "headturn           haiku"
+    "smoker-label       ."
+    "smoker             walkin-label"
+    "smoker             walkin"
+    "smoker             .";
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#animations-grid2 > label
+{
+    padding-top: 20px;
+}
+
+#animations-grid2-flex
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "cats smoker rotoscope"
+        "cairo smoker final"
+        "cairo walkin final";
+}
+
+#characters-grid
+{
+    column-gap: 20px;
+    row-gap: 30px;
+    justify-items: start;
+    align-items: start;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "characters-label characters-label characters-label"
+    "bleeding  . jon-snow"
+    "bleeding  . lighting"
+    "cyborg  . lighting"
+    "cyborg .  crusader"
+    "headshots .  meowverse"
+    "granny  . animal-prints"
+    "granny  . headturn"
+    "skater  . headturn"
+    "skater  . fortune"
+    ".  . fortune";
+}
+
+#characters-grid2
+{
+    column-gap: 10px;
+    row-gap: 1px;
+    justify-items: start;
+    align-items: start;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "characters-label characters-label characters-label"
+    "bleeding  . jon-snow"
+    "bleeding  . ."
+    "bleeding   . lighting"
+    ". . lighting"
+    "cyborg . lighting"
+    "cyborg   . ."
+    "cyborg  . crusader"
+    ". . crusader"
+    "headshots .  crusader"
+    "headshots .  ."
+    "headshots . meowverse"
+    ". . meowverse"
+    "granny . meowverse"
+    "granny . ."
+    "granny  . animal-prints"
+    ".  . animal-prints"
+    "skater . animal-prints"
+    "skater . ."
+    "skater  . headturn"
+    "skater  . headturn"
+    ". . headturn"
+    ".  . headturn"
+    "fortune . .";
+}
+
+
+#characters-grid > a>img
+{
+    border: 3px solid black;
+}
+
+#environments-grid
+{
+    column-gap: 100px;
+    row-gap: 10px;
+    grid-template-areas: 
+    ". environments-label . "
+    " . . ."
+    /* " . . ." */
+    /* " . . ." include if labels*/
+    "roadsign cat beachhouse seagulls"
+    "phone_line leaves .";
+}
+
+#fine-art-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "sepia-female-left bw-female bw-male sepia-female-back"
+    "boars-head boars-head rose-basket rose-basket"
+    ". conch-shell sepia-female-right .";
+}
+
+#illustrations-grid
+{
+    grid-template-areas: 
+    ". illustrations-label ."
+    ". image-viewer ."
+    ". cow .";
+
+    row-gap: 30px;
+}
+
+.res-640p
+{
+    width: 640px; 
+    height: 360px;
+}
+
+/* BG Colors */
+.bg-beige
+{
+    background-color: rgb(252, 246, 235);
+}
+
+#nameLink
+{
+    font-family: New-Class;
+    text-decoration: none;
+    color: black;
+    line-height: normal;
+    font-weight: normal;
+}
+
+/* #nameLink:hover
+{
+    color: rgb(255, 138, 157);
+    text-decoration: underline;
+}
+
+#nameLink:visited
+{
+    text-decoration: none;
+} */
+
+img, video
+{
+    /* max-width: 100%; */
+}
+
+table a 
+{
+    font-family: New-Class;
+}
+
+.flex-col a
+{
+    font-family: New-Class;
+}
+
+#canvas
+{
+    width: 100%;
+    height: 100%;
+    border-color:aqua;
+    /* display: flex; */
+    /* border-style: solid; */
+}
+
+#mobileNav
+{
+    /* border-right: solid black; */
+    /* height: 100%; */
+    /* width: 12%; */
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    /* position: fixed; */
+    /* top: 20px; */
+    /* background: white; */
+    /* color: white; */
+    /* float: left; */
+    /* border-style: solid; */
+    display: block;
+}
+
+#mainContent
+{
+    width: 70%;
+    /* padding-top: 5%; */
+    /* padding-left: 25vh; */
+    /* border-style: solid; */
+    border-color: red;
+}
+
+.flex-col > .image-viewer>img
+{
+    border: solid 3px black;
+}
+
+#catCarousel, #shipCarousel
+{
+    border: solid 3px black;
+}
+
+#catCarousel
+{
+    height: 455px;
+    width: 455px;
+}
+
+#shipCarousel
+{
+    height: 372px;
+    width: 567px;
+}
+
+.carousel-inner
+{
+    background: #fdf7eb;
+}
+
+.carousel
+{
+    overflow: hidden;
+}
+
+#portrait
+{
+    max-width: fit-content;
+    /* position: relative; */
+    /* padding-top: 1%; */
+    /* padding-left: 25vh; */
+    /* left: 250px; */
+    /* border-style: solid; */
+    border-color: blue;
+}
+
+#portrait img
+{
+    max-width: 100%;
+    height:auto;
+    width:auto;
+
+}
+
+#subContent
+{
+    position: relative;
+    /* max-width: 18%; */
+    font-size: 25px;
+    top: 150px;
+    /* width: 80%; */
+    padding: 0% 4%;
+    /* height: 563px;
+    left: 900px;
+    bottom: 600px; */
+    /* border-style: solid; */
+    overflow-wrap: break-word;
+}
+
+#clear
+{
+    clear: both;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: .02em;
+    font-size: inherit;
+    margin: 0 0 1em;
+}
+
+table#sidebar, th#sidebar, td#sidebar, div#sidebar
+{
+    font-size: 25px;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    border-spacing: 10px;
+    min-width: 25%;
+    /* float: left; */
+}
+
+
+table#sublinks, th#sublinks, td#sublinks, div#sublinks
+{
+    font-size: 20px;
+    padding-bottom: 10%;
+    border-spacing: 10px 10px;
+    padding-left: 5%;
+    /* float: left; */
+    
+}
+
+
+.flex-col#sidebar
+{
+    font-size: 25px;
+    padding-bottom: 19%;
+    padding-left: 11%;
+    padding-top: 8%;
+    /* border-spacing: 10px; */
+    min-width: 25%;
+    row-gap: 15px !important;
+    /* float: left; */
+}
+
+.flex-col#sublinks
+{
+    font-size: 20px;
+    /* padding-bottom: 10%; */
+    /* border-spacing: 10px 10px; */
+    padding-left: 11%;
+    row-gap: 15px;
+}
+
+.flex-col#visDevLinks
+{
+    font-size: 20px;
+    padding-left: 11%;
+    row-gap: 15px;
+}
+
+.flex-col a:link
+{
+    color: rgb(255, 138, 157);
+    text-decoration: none;
+}
+
+.flex-col a:visited
+{
+    color: rgb(255, 138, 157);
+}
+
+.flex-col a:hover
+{
+    color: grey;
+}
+
+.flex-col > video, .flex-col>iframe, .flex-row>video
+{
+    border: solid 3px black;
+    margin-bottom: 20px;
+}
+
+.flex-col > label
+{
+    margin-top: 20px;
+}
+
+.caption
+{
+    font-size: 24px;
+    font-family: new-class;
+}
+
+
+td a:link
+{
+    color: black;
+    text-decoration: none;
+}
+
+td a:visited
+{
+    color: rgb(255, 138, 157);
+}
+
+td a:hover
+{
+    color: grey;
+}
+
+.image-viewer
+{
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out; /* Slide effect */   
+}
+
+#viewerImage
+{
+    transition: opacity 0.5s ease;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#image-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 9999; /*MUST BE ON TOP*/
+}
+
+#fullscreen-image
+{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: zoom-in;
+    transition: transform 0.1s ease;
+}
+
+#fullscreen-image-zoomed
+{
+    max-width: max-content;
+    max-height: max-content;
+    cursor: zoom-out;
+    transition: transform 0.1s ease; /* may be unnecessary */
+}
+
+.close-btn
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10000;
+    font-size: 24px;
+}
+
+/* VIDEO EDGE CASES */
+.flex-col > #walkin
+{
+    margin-bottom: 55px;
+}
+
+.flex-col > #walkin-label
+{
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) /*Smartphones*/
+{
+    #toggleMenuButton
+    {
+        display: block !important;
+    }
+
+    #mobileNav
+    {
+        display: none;
+        box-sizing: content-box !important;
+    }
+
+    a 
+    {
+        font-size: xx-large;
+    }
+
+    .grid-container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    /* #animations-grid2 > video
+    {
+        max-width: 320px;
+        max-height: 240px;
+        border: solid 3px black;
+    } */
+    
+    .flex-col > video, iframe
+    {
+        max-width: 384px;
+        max-height: 216px;
+        margin-bottom: 20px;
+        /* border: solid 3px black; */
+    }
+
+    /* VIDEO EDGE CASES */
+    .flex-col>#walkin
+    {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .flex-col>#headturn
+    {
+        max-width: 384px;
+        max-height: 360px;
+    }
+
+    .flex-col>#smoker
+    {
+        max-width: 252px;
+        max-height: 384px;
+    }
+
+    
+    #subContent
+    {
+        position: relative;
+        /* max-width: 18%; */
+        font-size: 25px;
+        width: 60%;
+        padding: 0% 5%;
+        /* height: 563px;
+        left: 900px;
+        bottom: 600px; */
+        /* border-style: solid; */
+        overflow-wrap: break-word;
+    }
+
+    #animations-label
+    {
+        /* margin-left: 0; */
+        /* padding-left: 100px */
+        /* margin-right: 0; */
+    }
+
+    #animations-grid2
+    {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "animations-label"
+        "cats-label"
+        "cats"
+        "smoker-label"
+        "smoker"
+        "roto-label"
+        "rotoscope"
+        "cairo-label"
+        "cairo"
+        "headturn-label"
+        "headturn"
+        "walkin-label"
+        "walkin"
+        "final-label"
+        "final"
+        "haiku-label"
+        "haiku";
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #environments-grid
+    {
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 5px;
+        grid-template-areas: 
+        "environments-label"
+        "."
+        /* " . . ." */
+        /* " . . ." include if labels*/
+        "roadsign" 
+        "beachhouse" 
+        "seagulls"
+        "phone_line" 
+        "leaves";
+    }
+}
+
+@media (max-width: 1440px) /* 2020 Macbook Air */
+{
+    #animations-grid2
+    {
+        column-gap: 30px;
+        grid-template-columns: 2fr;
+
+        grid-template-areas:
+        "animations-label   animations-label"
+        "cats-label         roto-label"
+        "cats               rotoscope"
+        "cairo-label        final-label"
+        "cairo              final"
+        "headturn-label     haiku-label"
+        "headturn           haiku"
+        "smoker-label       ."
+        "smoker             walkin-label"
+        "smoker             walkin"
+        /*delete later*/
+        "smoker             walkin"
+        "smoker ."
+        "smoker ."
+        "smoker ."
+        "smoker ."
+        /*delete later*/
+        "smoker             .";
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="bg-beige">
+<head>
+    <meta charset="UTF-8" />
+    <title>About Cicely</title>
+
+    <!-- Custom 'Sacramento Font'
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Sacramento&display=swap" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="myStyle.css">
+    
+</head>
+
+<body class="bg-beige">
+    <div id = "canvas"> <!-- Overall section -->
+        <button id = "toggleMenuButton" onclick="showHidden('mobileNav')" style="display: none;">Toggle Menu</button>
+        <div id = flex-wrapper>
+            <div id="mobileNav"> <!--Sidebar menu-->
+                <h1 style = "padding-left: 6%; padding-top: 3%;">
+                    <a href = "index.html" id = "nameLink">Cicely Parris</a>
+                </h1>
+    
+                <br>
+                <div class = "flex-col" id="sidebar">
+                    <a href="animations.html">Animations</a>
+                    <!-- <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a> -->
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                    
+                    <!-- <div class="flex-col" id="visDevLinks" style="display: none;">
+                        <a href="characters.html">Characters</a>
+                        <a href="environments.html">Environments</a>
+                    </div> -->
+
+                    <a href="thumb.html">Thumbelina</a>
+                    <a href="fine-art.html">Fine Art</a>
+                    <a href="meow.html">Meow</a>
+                    <!-- <a href="fineartcity.html">new art city</a> -->
+                    
+                    <!-- <a href="illustrations.html">Illustrations</a> -->
+                </div>
+
+                <div class = "flex-col" id="sublinks">
+                    <a href = "index.html" style="color: gray;">About</a>
+                    <!-- <a href = "files/CV.pdf" target="_blank">CV</a> -->
+                </div>
+            </div>
+
+            <!-- <div class="flex-col" style=""> -->
+                <!-- <label style="font-family: New-Class; padding: 2%; font-size: 40px;" class="centered">About</label> -->
+            
+            <div id="portrait"> <!-- Content next to sidebar -->
+                <img src="img/portrait.png" style="max-width: fit-content;">
+            </div>
+            
+            <div class = "flex-col">
+
+
+                <div class="flex-row" id="subContent">
+
+                    <div class="flex-row">
+                        <h2>Welcome to my website!</h2>
+                    </div>
+
+                        <p style="font-family: New-Class;">
+                            Cicely Parris is a senior student attending the University of South Florida for Animation and Digital Modeling. She does multimedia work, with a strong emphasis on figure and portraiture. When she's not busy doing late night work, she enjoys building miniature book nooks and taking her cats on walks.
+                        </p>
+                        <p style="font-family: New-Class;">
+                            Email: <a href="mailto:cmparrisart@gmail.com">cmparrisart@gmail.com</a>
+                        </p>
+
+                        <div class="flex-row" id="cats-row" style="gap: 8px;">
+                            <a target="_blank" href="img/cats/fullres/callieField.jpg">
+                                <img src="img/cats/callieField.jpg" style="height: 532px;" alt="Photograph of a calico cat sunbathing in a field of grass.">
+                            </a> 
+                            <a target="_blank" href="img/cats/fullres/mishaPost.jpg">
+                                <img src="img/cats/mishaPost.jpg" style="height: 532px;" alt="Photograph of mustached cat laying next to a scratching post.">
+                            </a> 
+                            <a target="_blank" href="img/cats/fullres/freyaRibbon.jpg">
+                                <img src="img/cats/freyaRibbon.jpg" style="height: 532px;" alt="Photograph of a hazel-eyed kitten wearing a red ribbon for a collar.">
+                            </a> 
+                            <a target="_blank" href="img/cats/fullres/bashaTowel.jpg">
+                                <img src="img/cats/bashaTowel.jpg" style="height: 532px;" alt="Photograph of a gray-colored cat wrapped in a fluffy white blanket.">
+                            </a> 
+                        </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/javascriptFunctions.js"></script>
+    <script src="js/mousetrail.js"></script>
+</body>
+</html>

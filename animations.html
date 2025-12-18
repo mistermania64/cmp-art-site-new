@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body class="bg-beige">
+    
+<div id = "canvas"> <!-- Overall section -->
+    <button id = "toggleMenuButton" onclick="showHidden('mobileNav')" style="display: none;">Toggle Menu</button>
+    <div id = "flex-wrapper">
+        <div id="mobileNav"> <!--Sidebar menu-->
+            <h1 style = "padding-left: 6%; padding-top: 3%;">
+                <a href = "index.html" id = "nameLink">Cicely Parris</a>
+            </h1>
+
+            <br>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html" style="color: gray;">Animations</a>
+                <!-- <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a> -->
+                <a href="characters.html">Characters</a>
+                <a href="environments.html">Environments</a>
+                
+                <!-- <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                </div> -->
+
+                <a href="thumb.html">Thumbelina</a>
+                <a href="fine-art.html">Fine Art</a>
+                <a href="meow.html">Meow</a>
+                <!-- <a href="fineartcity.html">new art city</a> -->
+                
+                <!-- <a href="illustrations.html">Illustrations</a> -->
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "index.html">About</a>
+                <!-- <a href = "files/CV.pdf" target="_blank">CV</a> -->
+            </div>
+        </div>
+
+        
+        <!-- <div class = "grid-container" id="animations-grid2" style="row-gap: 20px; column-gap: 100px; max-width: 70%;"> 
+
+            <label id ='animations-label' style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: animations-label" class="centered">Animations</label>
+
+            <label class="centered" style="grid-area: cats-label;">I Like Cats</label>
+            <video src="video/animations/I Like Cats-1(1080p).m4v" controls style = "width:640px; height: 360px; grid-area: cats;"></video>
+
+            <label class="centered" style="grid-area: cairo-label;">Cairo</label>
+            <video src="video/animations/Cairo-1(1080p).m4v" controls class="res-640p" style="grid-area: cairo; align-self: start;"></video>
+
+            <label class="centered" style="grid-area: roto-label;">Rotoscoping Test</label>
+            <video src="video/animations/Rotoscoping-Parris-1(1080p).m4v" controls class="res-640p" style="grid-area: rotoscope;"></video>
+
+            <label class="centered" style="grid-area: final-label;">A Thing Called Evil</label>
+            <video src = "video/animations/Parris-Final Animation-1.m4v" controls class="res-640p" style="grid-area: final; align-self: start;"></video>
+        
+            <label class="centered" style="grid-area: smoker-label;">Smoker</label>
+            <video src="video/animations/Smoker-1(1080p).m4v" controls style="width: 372px; height: 566px; grid-area: smoker;"></video> <!- -496px by 755px- ->
+
+            <label class="centered" style="grid-area: walkin-label; align-self: self-end;">Walkin'</label>
+            <video src="video/animations/Walkin-1(1080p).m4v" controls style="width: 400px; height: 400px; grid-area: walkin; align-self: self-start;"></video>
+ 
+            <label class="centered" style="grid-area: headturn-label;">Headturn Test</label>
+            <video src="video/animations/Headturn Parris-1.m4v" controls class="res-640p" style="grid-area: headturn;"></video>
+
+            <label class="centered" style="grid-area: haiku-label;">Haiku</label>
+            <video src="video/animations/Haiku-Parris-1.m4v" controls class="res-640p" style="grid-area: haiku;"></video>
+    
+        </div> -->
+       
+
+        
+        <div class="flex-col centered" id="animations-flex-box">
+
+            <label id ='animations-label' style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: animations-label" class="centered">Animations</label>
+
+            <div class = "flex-row centered" id="animations-flex-box" style="column-gap: 120px;"> 
+    
+                <div class="flex-col centered" style="row-gap: 10px;">
+                    
+                    <!-- <a href="meow.html">Click here for 'meow!'</a> -->
+                    <!-- <label clas s="centered" style="grid-area: meow-label;">Meow</label>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/6s7St9kUPL4?si=-K955ZkhiZUiEQ9I" 
+                        title="YouTube video player" style = "width:640px; height: 480px;" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe> -->
+
+                    <label class="centered" style="grid-area: cats-label;">I Like Cats</label>
+                    <video src="video/animations/I Like Cats-1(1080p).m4v" controls style = "width:640px; height: 360px; grid-area: cats;"></video>
+        
+                    <label class="centered" style="grid-area: cairo-label;">Cairo</label>
+                    <video src="video/animations/Cairo-1(1080p).m4v" controls class="res-640p" style="grid-area: cairo; align-self: start;"></video>
+        
+                    <label class="centered" style="grid-area: roto-label;">Rotoscoping Test</label>
+                    <video src="video/animations/Rotoscoping-Parris-1(1080p).m4v" controls class="res-640p" style="grid-area: rotoscope;"></video>
+        
+                    <label class="centered" style="grid-area: smoker-label;">Smoker</label>
+                    <video id= "smoker" src="video/animations/Smoker-1(1080p).m4v" controls style="width: 372px; height: 566px; grid-area: smoker; place-self: center;"></video> <!- -496px by 755px- ->
+                    
+                    <label class="centered" style="grid-area: obstacle-label">Obstacle Course</label>
+                    <video id="obstacle" src="video/animations/Obcourseparris-1.m4v" controls class="res-640p" style="grid-area: obstacle;"></video>
+
+                </div>
+
+                <div class="flex-col centered" style="row-gap: 10px;">
+                    <label class="centered" style="grid-area: final-label;">A Thing Called Evil</label>
+                    <video src = "video/animations/Parris-Final Animation-1.m4v" controls class="res-640p" style="grid-area: final;"></video>
+
+                    <label class="centered" style="grid-area: haiku-label;">Haiku</label>
+                    <video src="video/animations/Haiku-Parris-1.m4v" controls class="res-640p" style="grid-area: haiku;"></video>
+
+                    <label class="centered" style="grid-area: headturn-label;">Headturn Test</label>
+                    <video id="headturn" src="video/animations/Headturn Parris-1.m4v" controls style="height:480px; width:512px; grid-area: headturn; place-self: center;"></video>
+                
+                    <label class="centered" id="walkin-label" style="grid-area: walkin-label; align-self: self-end;">Walkin'</label>
+                    <video id="walkin" src="video/animations/Walkin-1(1080p).m4v" controls style="width: 400px; height: 400px; grid-area: walkin; place-self: center;"></video>
+        
+                    <label class="centered" style="grid-area: candy-label;">Candy Walk</label>
+                    <video id="candy" src="video/animations/Candy Walk- Cicelyparris-1.m4v" controls class="res-640p" style="grid-area: candy;"></video>
+                    
+                </div>
+                    
+            </div>
+                
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/javascriptFunctions.js"></script>
+<script src="js/mousetrail.js"></script>
+</html>
