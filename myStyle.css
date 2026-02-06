@@ -818,5 +818,22 @@ td a:hover
         margin-left: auto;
         margin-right: auto;
     }
-   
+
+    #callie-img, #misha-img, #freya-img
+    {
+        height: 400px !important;
+    }
+
+    #basha-img
+    {
+        height: 300px !important;
+        justify-self: center;
+    }
+
+    #cats-row
+    {
+        align-items: center;
+        column-gap: 13px !important;
+    }
+
 }
