@@ -222,6 +222,7 @@ font-style: normal;
     grid-template-columns: auto auto auto;
     grid-template-areas:
     "characters-label characters-label characters-label"
+    "straw-hat viking winx"
     "bleeding  . jon-snow"
     "bleeding  . lighting"
     "cyborg  . lighting"
@@ -232,6 +233,22 @@ font-style: normal;
     "skater  . headturn"
     "skater  . fortune"
     ".  . fortune";
+
+    /* column-gap: 20px;
+    row-gap: 30px;
+    justify-items: start;
+    align-items: start;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "characters-label characters-label characters-label characters-label"
+    " . straw-hat winx bleeding"
+    " . viking headshots headturn"
+    " lighting lighting lighting lighting"
+    " jon-snow jon-snow jon-snow jon-snow"
+    " crusader crusader crusader crusader"
+    "animal-prints animal-prints animal-prints animal-prints"
+    " . granny  skater fortune"
+    " meowverse meowverse meowverse meowverse"  */
 }
 
 #characters-grid2
